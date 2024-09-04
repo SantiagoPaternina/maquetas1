@@ -1,0 +1,111 @@
+header, main, footer{
+    width: 100%;
+    height: 100px;
+    border: 2px solid black;
+}
+main{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+main aside,
+main section{
+    height: 100%;
+    border: 2px solid black;
+}
+main aside,
+main section{
+    width: 30%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main section{
+    width: 68%;
+}
+main aside article,
+main section article{
+    width: 100%;
+}
+main aside article:first-child,
+main section article:first-child{
+    height: 67%;
+    background-color: gray;
+    border: 2px solid black;
+}
+main section article:first-child{
+    background-color: #fff;
+    height: 77%;
+}
+main aside article:last-child,
+main section article:last-child{
+    height: 30%;
+    background-color: pink;
+    border: 2px solid black;
+}
+/*MEDIDAS PARA CELULARES*/
+@media (max-width:560px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        border: none;
+    }
+    main aside,
+    main section{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    main section{
+        height: 70%;
+    }
+    main aside{
+        height: 30%;
+    }
+    main aside article:last-child{
+        height: 20%;
+    }
+    main aside article:first-child,
+    main aside article:last-child,
+    main section article:last-child{
+        height: 50%;
+    }
+}
+/*MEDIDAS PARA TABLETS*/
+@media (min-width: 560px) and (max-width: 1080px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main section article:last-child{
+    height: 20%;
+    background-color: skyblue;
+}

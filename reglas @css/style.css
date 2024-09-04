@@ -1,0 +1,45 @@
+.pista-carrera{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.personaje, .personaje2, .personaje3, .personaje4{
+    display: inline-block;
+    background-color: black;
+    color: red;
+    width: 40px;
+    height: 70px;
+    text-align: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: relative;
+    animation: mover 2s ease;
+}
+.personaje2{
+    background-color: blue;
+    animation: mover 2s ease-in;
+}
+.personaje3{
+    background-color: gold;
+    animation: mover 2s ease-out;
+}
+.personaje4{
+    background-color: darkgray;
+    animation: mover 2s ease-in-out;
+}
+/*ANIMAR PERSONAJE*/
+@keyframes mover {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        background-color: red;
+        color: black;
+    }
+    100%{/*PASO FINAL*/
+        top: 0;
+        left: 500px;
+    }
+}
